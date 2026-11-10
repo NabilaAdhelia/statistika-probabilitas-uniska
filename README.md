@@ -31,11 +31,12 @@ Link: https://www.kaggle.com/datasets/spscientist/students-performance-in-exams
 - H3 (ANOVA): avg_score berbeda antar tingkat pendidikan orang tua.
 
 ## Screenshot
-![Dashboard](images/dashboard.png)
-![Heatmap](images/heatmap.png)
-![Scatter](images/scatter.png)
-![Boxplot per kelompok](images/boxplot_kelompok.png)
+![Dashboard](dashboard.png)
+![Heatmap](heatmap.png)
+![Scatter](scatter.png)
+![Boxplot per kelompok](boxplot_kelompok.png)
 
 ## Struktur Repo
-- `Milestone1-EDA-StudentsPerformance.ipynb`: analisis EDA lengkap
--
+- `Milestone1_EDA_StudentsPerformance.ipynb`: analisis EDA lengkap
+- `StudentsPerformance.csv`: dataset
+- `dashboard.png`, `heatmap.png`, `scatter.png`, `boxplot_kelompok.png`: hasil visualisasi
