@@ -40,3 +40,19 @@ Link: https://www.kaggle.com/datasets/spscientist/students-performance-in-exams
 - `Milestone1_EDA_StudentsPerformance.ipynb`: analisis EDA lengkap
 - `StudentsPerformance.csv`: dataset
 - `dashboard.png`, `heatmap.png`, `scatter.png`, `boxplot_kelompok.png`: hasil visualisasi
+
+## Milestone 3: Sampling Distribution & Confidence Interval
+
+**Dataset:** Students Performance (1.000 siswa)  
+
+**Metrik utama:** skor writing | **Grup:** test preparation course (completed vs none)
+
+### Ringkasan Hasil
+- **Sampling distribution:** SE empiris mendekati SE teori (σ/√n) untuk n = 30, 100, 300 (mis. n = 300: 0,864 vs 0,877).
+- **CI 95% rata-rata writing (semua siswa):** rumus [67,11; 69,00] vs bootstrap [67,10; 69,01]. Hampir identik.
+- **CI 95% selisih (completed - none):** 9,91 poin. Rumus Welch [8,10; 11,72], bootstrap [8,13; 11,69]. Tidak memuat 0. Cohen's d = 0,69.
+- **Power analysis (MDE 3 poin):** power = 88%, MDE terkecil terdeteksi (power 80%) = 2,67 poin. Data cukup.
+- **Rekomendasi:** SHIP. Dorong siswa mengikuti test prep.
+- **Catatan risiko:** data observasional (bukan bukti kausal), faktor pengganggu belum dikendalikan, analisis baru pada skor writing.
+
+**Notebook:** [Milestone3_Sampling_CI_StudentsPerformance.ipynb](https://github.com/NabilaAdhelia/statistika-probabilitas-uniska/blob/main/Milestone3_Sampling_CI_StudentsPerformance.ipynb)
